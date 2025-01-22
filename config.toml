@@ -1,11 +1,16 @@
 baseURL = "https://enu-shop.com"
-title = "enu-shop"
+title = "N-SHOP"
 author = "shinji.kuwata"
 languageCode = "ja"
 DefaultContentLanguage = "ja"
 enableInlineShortcodes = true
 theme = "tella"
 enableRobotsTXT = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 # Please enable this feature if the site is available in Japanese, Chinese or Korean.
 #hasCJKLanguage = true
@@ -25,14 +30,14 @@ enableRobotsTXT = true
 
   [params.logo]
     main = "img/logo/logo.svg"
-    alt = "Tella Logo"
+    alt = "N-SHOP"
 
     # The size parameter is the class name of tailwindcss
     # https://tailwindcss.com/
     size = "h-14"
 
   [params.site]
-    name = "Tella"
+    name = "N-SHOP"
 
   [params.icon]
     #If you want to use FontAwesome, set this parameter to true.
@@ -55,13 +60,13 @@ enableRobotsTXT = true
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 1
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 4
+    weight = 2
 
   # Footer Menu
   [[menu.footer]]
