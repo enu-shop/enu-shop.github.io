@@ -4,8 +4,8 @@
         <div class="swiper-slide">
             <img style="opacity: 0.6;" src="{{ .image }}" alt="{{ .alt }}">
             <div class="s-fade-txt">
-                <h1 style="font-weight: 900; font-size: 6.5em;" class="{{ or .color "text-white" }}">{{ .title }}</h1>
-                <h1 style="font-weight: 900; font-size: 6.5em;" class="{{ or .color "text-white" }}">{{ .subtitle }}</h1>
+                <h1 class="text-6xl font-bold {{ or .color "text-white" }}">{{ .title }}</h1>
+                <h1 class="text-6xl font-bold {{ or .color "text-white" }}">{{ .subtitle }}</h1>
             </div>
         </div>
         {{ end }}
